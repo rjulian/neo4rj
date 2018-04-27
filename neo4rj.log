@@ -1,0 +1,39 @@
+# Logfile created on 2018-04-24 19:35:08 -0700 by logger.rb/56815
+I, [2018-04-24T20:04:34.254334 #19496]  INFO -- neo4rj: Starting neo4rj service on port 
+I, [2018-04-24T20:09:50.152294 #19870]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:10:01.436334 #19870]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:10:06.709321 #19870]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:10:41.642279 #19870]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:10:50.808161 #19961]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:12:29.162267 #20265]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:12:54.353132 #20410]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:13:40.760317 #20553]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:15:08.664152 #20708]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:15:52.132542 #20850]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:16:46.514088 #20993]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:17:09.647184 #21140]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:20:33.949716 #21332]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:20:55.458438 #21332]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:21:04.210334 #21414]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:22:13.497842 #21414]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:22:20.286371 #21839]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:23:06.298238 #21982]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:24:16.221671 #22129]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:31:55.879709 #22628]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:32:01.505961 #22628]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-24T20:32:22.410872 #22766]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-24T20:32:26.137023 #22766]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-24T20:33:43.234982 #22766]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:17:27.911949 #4742]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-26T21:18:09.846885 #5275]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-26T21:18:22.784100 #5275]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:20:24.015674 #5688]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-26T21:33:05.925730 #6523]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-26T21:33:34.600571 #6523]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:33:45.458938 #6523]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:33:59.293794 #6523]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:34:24.802667 #6523]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:35:27.444475 #7577]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-26T21:35:32.752994 #7577]  INFO -- neo4rj: Connection from 127.0.0.1.
+I, [2018-04-26T21:41:12.970871 #7851]  INFO -- neo4rj: Starting neo4rj service on port 7474
+I, [2018-04-26T21:41:46.952040 #7851]  INFO -- neo4rj: Connection from 127.0.0.1.
