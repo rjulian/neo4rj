@@ -1,4 +1,4 @@
-require './neo4rj'
+require './lib/neo4rj'
 
 instance = Neo4rj.new
 
