@@ -1,4 +1,6 @@
 Neo4rj
 ----------------
 
-A neo4j honeypot!
+A (currently) low interaction [neo4j](http://neo4j.com) honeypot!
+
+To run, simply `ruby ./bin/start.rb`
