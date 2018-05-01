@@ -26,21 +26,22 @@ Content-Length: 137
     @logger.info 'Starting neo4rj service on port 7474'
     mock_http_server = TCPServer.new 7474
     loop do
-      Thread.start(mock_http_server.accept) do |client|
-        @trans_id = SecureRandom.uuid
-        handle_conn_metadata(client)
-        client.puts payload
-        stop_http_service(client)
-      end
+      create_threads(mock_http_server)
+    end
+  end
+
+  def create_threads(server)
+    Thread.start(server.accept) do |client|
+      @trans_id = SecureRandom.uuid
+      handle_conn_metadata(client)
+      client.puts payload
+      stop_http_service(client)
     end
   end
 
   def handle_conn_metadata(connection)
-    headers = {}
-    while line = connection.gets.split(' ', 2)
-      break if line[0] == ""
-      headers[line[0].chop] = line[1].strip
-    end
+    headers = collect_headers(connection)
+
     remote_ip = connection.peeraddr[3]
     remote_port = connection.peeraddr[1]
     @logger.info("#{@trans_id}:Connection from #{remote_ip}:#{remote_port}.")
@@ -49,6 +50,15 @@ Content-Length: 137
       auth_string = Base64.decode64(b64_auth)
       @logger.info("#{@trans_id}:Attempted authentication #{auth_string}.")
     end
+  end
+
+  def collect_headers(connection)
+    headers = {}
+    while line = connection.gets.split(' ', 2)
+      break if line[0] == ""
+      headers[line[0].chop] = line[1].strip
+    end
+    headers
   end
 
   def stop_http_service(connection)
