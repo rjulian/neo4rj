@@ -8,6 +8,9 @@ RSpec.describe Neo4rj do
     Thread.new do
       @neo4rj.start_http_service
     end
+    Thread.new do
+      @neo4rj.start_bolt_service
+    end
   end
 
   it 'creates a log file on start' do
@@ -20,8 +23,18 @@ RSpec.describe Neo4rj do
     expect(@neo4rj.payload).not_to be_nil
   end
 
-  it 'returns the expected payload' do
+  it 'returns the expected http payload' do
     uri = URI('http://localhost:7474')
+    Net::HTTP.start(uri.host, uri.port) do |http|
+      request = Net::HTTP::Get.new uri
+      response = http.request request
+      expect(response.body.include?('management')).to eq(true)
+      expect(response.code).to eq('200')
+    end
+  end
+
+  it 'returns the expected http payload' do
+    uri = URI('http://localhost:7687')
     Net::HTTP.start(uri.host, uri.port) do |http|
       request = Net::HTTP::Get.new uri
       response = http.request request

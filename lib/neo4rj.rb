@@ -7,7 +7,7 @@ require 'securerandom'
 # Implements a fake service neo4j running on our local machine
 class Neo4rj
   def initialize
-    @logger = Logger.new('| tee neo4rj.log', 'weekly', progname: 'neo4rj')
+    @logger = Logger.new(STDOUT, 'weekly', progname: 'neo4rj')
   end
 
   def payload
@@ -23,7 +23,7 @@ Content-Length: 137
   end
 
   def start_http_service
-    @logger.info 'Starting neo4rj service on port 7474'
+    @logger.info 'Starting neo4rj http service on port 7474'
     mock_http_server = TCPServer.new 7474
     loop do
       create_threads(mock_http_server)
@@ -36,6 +36,14 @@ Content-Length: 137
       handle_conn_metadata(client)
       client.puts payload
       stop_http_service(client)
+    end
+  end
+
+  def start_bolt_service
+    @logger.info 'Starting neo4rj bolt service on port 7687'
+    mock_bolt_server = TCPServer.new 7687
+    loop do
+      create_threads(mock_bolt_server)
     end
   end
 
